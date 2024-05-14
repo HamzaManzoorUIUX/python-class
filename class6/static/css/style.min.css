@@ -1,1 +1,1 @@
-*{-webkit-box-sizing:border-box;box-sizing:border-box}img{max-width:100%;width:100%}
+*{-webkit-box-sizing:border-box;box-sizing:border-box}img{max-width:100%;width:100%}body button{width:200px;height:50px;border-radius:.5rem;border:none}body.dark{background-color:#000}body.dark button{background-color:#fff;color:#000}body.light{background-color:#fff}body.light button{background-color:#000;color:#fff}
