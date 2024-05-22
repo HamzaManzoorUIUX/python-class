@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block main %}
+<h1> hello Hamza</h1>
+<img src="{{url_for("static",filename="./images/Screenshot_4.png" )}}" alt="">
+{% for x in data %}
+<div>
+    {{ x[0] }}
+</div>
+{% endfor %}
+<form action="http://localhost:5000/" method="post">
+    <div>
+        <label for="">Name</label>
+        <input type="text" name="name">
+    </div>
+    <div>
+        <label for="">Id</label>
+        <input type="text" name="id">
+    </div>
+    <div>
+        <label for="">Email</label>
+        <input type="email" name="email">
+    </div>
+    <div>
+        <label for="">Password</label>
+        <input type="password" name="password">
+    </div>
+    <div>
+        <label for="">City</label>
+        <input type="text" name="city">
+    </div>
+    <input type="submit" value="submit">
+</form>
+<button>
+    click me
+</button>
+{% endblock %}
